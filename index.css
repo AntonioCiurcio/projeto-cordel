@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --font1: "Sriracha", cursive;
+    --font2: "Passion One", sans-serif;
+    --font3: verdana, sans-serif;
+}
 *{
     margin: 0px;
     padding: 0px;
 }
+
 body{
     min-height: 100vh;
     background-color: rgb(182, 166, 95);
+    font-family: var(--font3);
 }
 header{
+    font-family: var(--font2);
+    font-size: 3vw;
     background-color: black;
     color: aliceblue;
     text-align: center;
@@ -19,9 +30,11 @@ header > h1{
     padding-top: 10px;
 
 }
+
 a{
     text-decoration: none;
     color: aliceblue;
+    font-size: 2vw;
 }
 a:hover{
     color: bisque;
@@ -29,12 +42,41 @@ a:hover{
     transition: 0.8s;
 }
 .imagem{
+    font-family: var(--font1);
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(10, 10, 10);
+    margin: 2vh;
+    padding: 10px;
+    box-shadow: inset 2px 5px 10px 5px black;
+    background-attachment: fixed;
+}
+.imagem > p{
+    font-family: var(--font1);
+    font-size: 2vw;
+    padding: 3px;
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.721);
+    text-shadow: 0.8em black;
+}
+#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+.normal{
+    margin: 2vh;
+    font-family: var(--font1);
+    font-size: 2vw;
+}
+footer{
     background-color: black;
     color: aliceblue;
-    margin: 10vh;
-}
-
-
-.normal{
-    margin: 10vh;
+    text-align: center;
+    padding: 5px;
 }
